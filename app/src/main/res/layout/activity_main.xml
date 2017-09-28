@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.parcelableandserializable.MainActivity">
+
+    <EditText
+        android:hint="Name"
+        android:id="@+id/etPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="age"
+        android:id="@+id/etPersonAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Gender"
+        android:id="@+id/etPersonGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Address"
+        android:id="@+id/etPersonAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnPersonParcelable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendPerson"
+        android:text="Send Parcelable"/>
+
+    <Button
+        android:id="@+id/btnPersonSerializable"
+        android:onClick="sendPerson"
+        android:text="sendSerializable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSharePerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Person"
+        android:onClick="sendPerson"/>
+
+    <Button
+        android:id="@+id/btnAddPersonToList"
+        android:text="Add Person To List"
+        android:onClick="savePerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSendList"
+        android:text="Send List"
+        android:onClick="sendPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
